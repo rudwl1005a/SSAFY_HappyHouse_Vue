@@ -95,6 +95,10 @@ export default {
             this.$store.commit("LOGOUT");
             this.$router.push("/");
         },
+        changeMenu(menu){
+            console.log(menu);
+            this.$store.commit("CHANGE_MENU", menu);
+        }
     },
 };
 </script>
@@ -152,7 +156,7 @@ export default {
     color: skyblue;
 }
 
-.active {
-    background-color: #5eaf13;
+.icon-bar .router-link-exact-active {
+    border-left: 3px solid skyblue;
 }
 </style>
