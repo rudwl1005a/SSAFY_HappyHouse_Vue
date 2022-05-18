@@ -7,6 +7,7 @@ import Home from '@/components/Home.vue'
 import Login from '@/components/Login.vue'
 import Register from '@/components/Register.vue'
 import UserInfo from '@/components/UserInfo.vue'
+import ApartSearch from '@/components/ApartSearch.vue'
 
 // NavigationDuplicated 에러 해결
 const originalPush = VueRouter.prototype.push;
@@ -28,6 +29,11 @@ export default new VueRouter({
             component: Login
         },
         {
+            name: 'ApartSearch',
+            path: '/apartsearch',
+            component: ApartSearch
+        },
+        {
             name: 'Register',
             path: '/register',
             component: Register
@@ -36,7 +42,6 @@ export default new VueRouter({
             name: 'UserInfo',
             path: '/userinfo',
             component: UserInfo,
-            props: true
         },
     ]
 });

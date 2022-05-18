@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-4">
+  <div class="container mt-3" :class="{'change-big': $store.state.mainDiv, 'change-small': !$store.state.mainDiv}">
     <div class="card col-sm-12 mt-1" style="min-height: 600px">
       <div class="card-body">
         <div class="row">
@@ -263,4 +263,18 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.leftSide {
+	overflow:scroll; 
+	-ms-overflow-style: none;
+	height: 650px;
+}
+
+.leftSide::-webkit-scrollbar {
+    display: none;
+}
+
+.list-group-item:nth-child(2n) {
+	background-color: lightgray;
+}
+</style>

@@ -10,7 +10,7 @@
                     <font-awesome-icon icon="fa-solid fa-house" />
                 </div>
             </router-link>
-            <router-link to="/apart">
+            <router-link to="/apartsearch">
                 <div v-if="$store.state.sidebar">
                     <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
                     <div class="routerLinkTitle">아파트 검색</div>
